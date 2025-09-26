@@ -1,0 +1,58 @@
+# ~/.config/alacritty/alacritty.toml
+
+# ============================================================================
+# Env Configuration
+# ============================================================================
+[env]
+TERM = "xterm-256color"
+
+# ============================================================================
+# Window Configuration
+# ============================================================================
+[window]
+dimensions = { columns = 120, lines = 35 }
+padding = { x = 10, y = 10 }
+decorations = "Full" # Or "None" for a truly minimal window
+blur = true
+opacity = 0.8 # Slight transparency
+dynamic_padding = false
+startup_mode = "Windowed" # Or "Maximized", "Fullscreen"
+
+option_as_alt = "Both"
+# ============================================================================
+# Font Configuration
+# ============================================================================
+[font]
+size = 14.0
+
+# [font.offset]
+# x = 0
+# y = 0
+# [font.glyph_offset]
+# x = 0
+# y = 0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font" # <--- Use the EXACT name from Font Book!
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+
+# ============================================================================
+# Keybindings Configuration
+# ============================================================================
+
+[keyboard]
+bindings = [
+]
