@@ -1,2 +1,57 @@
-lazy-lock.json
+# ----------------------------------------
+# GENERAL CONFIGURATION & OS SPECIFIC FILES
+# ----------------------------------------
+# Ignore all configuration logs and temporary caches
+*.log
+*.swp
+*.bak
+*.cache
 
+# Git directory itself
+.git/
+
+# macOS DS_Store files
+.DS_Store
+
+# ----------------------------------------
+# APPLICATION SPECIFIC IGNORES
+# ----------------------------------------
+
+# 1. dconf (Settings Database)
+# The dconf user database is a binary file that changes constantly.
+dconf/user
+
+# 2. composer (PHP Dependency Manager)
+# Ignore cached packages and configuration files
+composer/cache/
+composer/auth.json # Contains sensitive credentials/API keys
+
+# 3. github-copilot
+# Contains session tokens, logs, and sensitive cache data
+github-copilot/hosts.json
+github-copilot/logs/
+github-copilot/session.json
+
+# 4. nvim (Neovim)
+# Ignore swap files, backup files, and the cache directory
+nvim/swap/
+nvim/backup/
+nvim/shada/
+nvim/undo/
+nvim/cache/
+# Ignore the lazy-lock.json if you manage plugin versions automatically
+# and don't want to track every change.
+# If you DO want to track the current state, remove the line below.
+nvim/lazy-lock.json
+
+# 5. fish (Shell)
+# Ignore history files (often large and personal)
+fish/fish_history
+
+# 6. tmux (Terminal Multiplexer)
+# Ignore the persistent server socket file
+tmux/tmux-*.pid
+
+# 7. alacritty
+# No common default cache files to ignore here, assuming you only
+# track the alacritty.toml or alacritty.yml config file(s).
