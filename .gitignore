@@ -55,3 +55,5 @@ tmux/tmux-*.pid
 # 7. alacritty
 # No common default cache files to ignore here, assuming you only
 # track the alacritty.toml or alacritty.yml config file(s).
+=======
+lazy-lock.json
