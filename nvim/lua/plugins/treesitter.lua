@@ -51,6 +51,15 @@ return {
 					show_help = "?",
 				},
 			},
+
+			parser_configurations = {
+				json = {
+					conceal = false,
+				},
+				http = {
+					conceal = false,
+				},
+			},
 		},
 		-- config = function(_, opts)
 		-- 	require("nvim-treesitter.configs").setup(opts)
