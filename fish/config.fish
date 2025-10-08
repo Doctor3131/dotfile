@@ -95,7 +95,6 @@ function pdf
     cd /mnt/c/Users/sirie/Documents/Keybindings/pdf
 end
 
-
 # ==============================================================================
 # 4. LIST COMMANDS (eza aliases)
 # ==============================================================================
@@ -104,13 +103,13 @@ alias t4 '====================List commands========================'
 
 # Note: In fish, the last command 'ls' is used for autocompletion unless you
 # specifically tell it to use the full path or 'command ls'.
-alias ls 'eza --icons'
-alias la 'eza -A --icons'
-alias l 'eza -lh --git --icons'
-alias ll 'eza -lah --git --icons'
-alias lt 'eza --tree --icons'
-alias lti 'eza -lT --ignore-glob=".git|node_modules" --icons'
-alias lt2 'eza --tree --level=2 --icons'
+alias ls 'eza --icons --sort=type --group-directories-first'
+alias la 'eza -A --icons --sort=type --group-directories-first'
+alias l 'eza -lh --git --icons --sort=type --group-directories-first'
+alias ll 'eza -lah --git --icons --sort=type --group-directories-first'
+alias lt 'eza --tree --icons --sort=type --group-directories-first'
+alias lti 'eza -lT --ignore-glob=".git|node_modules" --icons --sort=type --group-directories-first'
+alias lt2 'eza --tree --level=2 --icons --sort=type --group-directories-first'
 
 # ==============================================================================
 # 5. GREP WITH COLOR (Standard aliases)
