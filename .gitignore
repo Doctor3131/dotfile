@@ -31,6 +31,7 @@ composer/auth.json # Contains sensitive credentials/API keys
 github-copilot/hosts.json
 github-copilot/logs/
 github-copilot/session.json
+github-copilot/
 
 # 4. nvim (Neovim)
 # Ignore swap files, backup files, and the cache directory
@@ -57,3 +58,4 @@ tmux/tmux-*.pid
 # track the alacritty.toml or alacritty.yml config file(s).
 =======
 lazy-lock.json
+
